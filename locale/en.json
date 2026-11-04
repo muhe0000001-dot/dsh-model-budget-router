@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Model Budget Router",
+    "description": "Route each turn to a cheap / standard / strong tier by task complexity, with zero extra model calls and evidence-based escalation."
+  }
+}
