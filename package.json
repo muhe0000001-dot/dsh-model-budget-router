@@ -1,0 +1,46 @@
+{
+  "name": "dsh-model-budget-router",
+  "version": "1.6.0",
+  "description": "按任务复杂度自动切换模型与推理强度，省 DeepSeek 的 token 钱。",
+  "icon": "./icon.svg",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "model-router",
+    "reasoning-effort",
+    "cost-saving",
+    "cordis"
+  ],
+  "type": "module",
+  "main": "lib/index.js",
+  "engines": {
+    "node": ">=20",
+    "dsh": ">=0.2.1-rc.1 <0.3.0"
+  },
+  "exports": {
+    ".": "./lib/index.js",
+    "./policy": "./lib/policy.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./icon": "./icon.svg",
+    "./locale/*.json": "./locale/*.json"
+  },
+  "files": [
+    "lib",
+    "locale",
+    "icon.svg",
+    "cordis.patch.yml",
+    "README.md",
+    "PUBLISHING.md",
+    "LICENSE"
+  ],
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}
