@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "模型省钱路由",
+    "description": "按任务复杂度自动在 cheap / standard / strong 三档之间切换模型与推理强度；评估零额外调用，失败才升级。"
+  }
+}
